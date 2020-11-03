@@ -4,9 +4,9 @@ import styles from './style.module.css'
 import NavigationBar from '../NavigationBar'
 import Combobox from '../Combobox'
 
-const Navigation = () => (
+const Navigation = ({activeTab}) => (
   <section>
-    <NavigationBar />
+    <NavigationBar a = {activeTab}/>
     <Combobox />
   </section>
 )
