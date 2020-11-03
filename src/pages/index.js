@@ -1,6 +1,7 @@
 import React from "react"
 import ContactBar from '../components/contactBar'
 import NavigationHeader from '../components/NavigationHeader'
+import Footer from '../components/Footer'
 
 const IndexPage = () => (
   <main>
@@ -9,6 +10,7 @@ const IndexPage = () => (
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>This is were we will add content</p>
+    <Footer />
   </main>
 )
 
