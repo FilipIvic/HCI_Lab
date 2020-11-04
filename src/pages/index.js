@@ -1,16 +1,15 @@
 import React from "react"
-
-import NavigationHeader from '../components/NavigationHeader'
-import Footer from '../components/Footer'
-
+ 
+import HeaderFooterLayout from "../layouts/headerFooter"
+ 
 const IndexPage = () => (
-  <main>
-    <NavigationHeader activeTab = "Contact"/>
+  <HeaderFooterLayout activeTab="Home">
+    {/* Body components here! */}
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>This is were we will add content</p>
-    <Footer />
-  </main>
+  </HeaderFooterLayout>
 )
-
+ 
 export default IndexPage
+
