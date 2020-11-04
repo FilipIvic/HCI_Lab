@@ -9,6 +9,7 @@ const IndexPage = () => (
     {/* Body components here! */}
     <TitlePage />
     <PageContent />
+    <PageContent />
   </HeaderFooterLayout>
 )
  
