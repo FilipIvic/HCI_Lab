@@ -1,14 +1,15 @@
 import React from 'react'
 
 import styles from './style.module.css'
+import { navs as navTabs } from '../../constants/const'                 //korištenje 'as'
 
-const navTabs = ['Home', 'Accommodation', 'Photo Gallery', 'Contact']
+//const navTabs = ['Home', 'Accommodation', 'Photo Gallery', 'Contact']
 
-const NavigationBar = (props) => (
-    <nav className={styles.navigationBar}>
+const NavigationBar = (props) => (                                      //umjesto props mozemo koristit ({ activeTab, useThisStyle })
+    <nav className={styles[props.useThisStyle || 'navigationBar']}>
       {navTabs.map(tab => {
-      if (tab === props.a)                      //* activeTab je deklariran u /pages/index.js 
-        return (                                        // a je deklariran u Navigation
+      if (tab === props.a)                                              //* activeTab je deklariran u /pages/index.js 
+        return (                                                        // a je deklariran u Navigation
           <li className={styles.active}>{tab}</li>)
       else
         return <li>{tab}</li>

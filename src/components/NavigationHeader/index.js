@@ -17,3 +17,7 @@ const NavigationHeader = ({ activeTab }) => (
 )
  
 export default NavigationHeader
+
+/* dodavanje segmenta mozemo napraviti i s <> </>
+    natakav nacin vracamo cijeli segment 
+*/
